@@ -1,0 +1,16 @@
+{
+  "name": "gd-editor-ai-knowledge",
+  "version": 1,
+  "language": "de",
+  "primary": "knowledge/editor_ai_reference.md",
+  "files": [
+    "knowledge/editor_ai_reference.md",
+    "knowledge/levelstring_contract.md",
+    "knowledge/design_rules.md",
+    "knowledge/examples.md",
+    "knowledge/validation_checklist.md",
+    "levels/README.md",
+    "levels/<level-id>.json"
+  ],
+  "raw_primary_url": "https://raw.githubusercontent.com/toni857/gd/main/knowledge/editor_ai_reference.md"
+}

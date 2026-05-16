@@ -1,0 +1,10 @@
+Geometry Dash Editor AI Knowledge Base
+
+Start here:
+- README.md
+- knowledge/editor_ai_reference.md
+- knowledge/levelstring_contract.md
+- knowledge/examples.md
+
+This repository is meant to be read by the Geode Editor AI mod.
+The AI must build Geometry Dash editor object strings, not describe levels.
