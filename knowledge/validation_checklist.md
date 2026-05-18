@@ -17,6 +17,8 @@ Vor jeder Antwort pruefen:
 - [ ] Kein langer kuenstlicher Blockboden, ausser explizit verlangt.
 - [ ] Ground-Spikes liegen exakt auf Y `105`.
 - [ ] Keine Ground-Spikes mit Y `120`, Y `150`, Y `200` oder hoeher.
+- [ ] Niedrige Blockplattformen mit Objekt-ID `1` liegen 30 Y-Einheiten tiefer als naheliegend, meist Y `90`.
+- [ ] Keine niedrigen Blockplattformen auf Y `120`; das ist um 30 zu hoch.
 - [ ] Der erste spielbare Abschnitt startet links nach rechts ab etwa X `180` bis `240`.
 
 Wenn eine dieser Regeln nicht sicher erfuellt ist: einfachen Spike-/Plattform-Levelstring auf dem vorhandenen GD-Ground erzeugen.

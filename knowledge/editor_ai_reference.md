@@ -86,7 +86,9 @@ Regeln:
 - Fuer normales Cube-Groundplay ist Y `105` die Gameplay-Linie.
 - Ground-Spikes muessen exakt Y `105` benutzen.
 - Nutze fuer Ground-Spikes nicht Y `120`, Y `150`, Y `200` oder hoeher.
-- Kleine erreichbare Plattformen liegen nur dann bei Y `120` bis Y `135`, wenn der Nutzer Plattformen verlangt.
+- Block-ID `1` muss 30 Y-Einheiten tiefer platziert werden als die AI oft annimmt.
+- Kleine erreichbare Blockplattformen liegen nur dann bei Y `90` bis Y `105`, wenn der Nutzer Plattformen verlangt.
+- Nutze fuer niedrige Blockplattformen nicht Y `120`; das ist um 30 zu hoch.
 - Wenn der Nutzer keine Plattformen verlangt, baue keine hohen Plattformen.
 - Baue ab etwa X `180` bis X `240` nach rechts. Nicht um X `0` stapeln.
 - Hindernisse, die gesprungen werden sollen, muessen auf oder knapp ueber der Spielerlinie liegen.

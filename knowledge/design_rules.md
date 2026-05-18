@@ -11,6 +11,7 @@ Ein gutes Geometry-Dash-Level ist zuerst lesbar und spielbar. Design unterstuetz
 - Keine langen Blockboeden bauen, ausser der Nutzer verlangt explizit Custom-Ground.
 - Gameplay muss auf dem Spielerpfad liegen: Groundline Y `105`, Ground-Spikes exakt Y `105`.
 - Nicht fuer Ground-Spikes verwenden: Y `120`, Y `150`, Y `200` oder hoeher.
+- Block-ID `1` fuer niedrige Plattformen 30 Y-Einheiten tiefer setzen: meist Y `90`, nicht Y `120`.
 - Objekte weit ueber der Laufbahn sind Deko, kein Hindernis.
 
 ## Lesbarkeit

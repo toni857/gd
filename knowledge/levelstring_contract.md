@@ -71,7 +71,9 @@ Die KI soll fuer kurze Prompts nicht zu viele Objekte erzeugen:
 - Ground-Spike: exakt Y `105`
 - Nicht fuer Ground-Spikes verwenden: Y `120`, Y `150`, Y `200` oder hoeher
 - Spike-Abstand: mindestens 90 bis 150 X-Einheiten fuer einfache Schwierigkeit
-- Plattformhoehen: Y `120` bis `135`, nur wenn Plattformen wirklich verlangt sind
+- Block-ID `1`: fuer niedrige Plattformen 30 Y-Einheiten tiefer setzen als die AI oft annimmt
+- Plattformhoehen: Y `90` bis `105`, nur wenn Plattformen wirklich verlangt sind
+- Nicht fuer niedrige Blockplattformen verwenden: Y `120`; das ist um 30 zu hoch
 - Plattformen: 2 bis 4 Blockobjekte, nicht endlos weiterziehen
 
 ## Keine erfundenen Trigger

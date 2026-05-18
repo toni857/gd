@@ -26,7 +26,9 @@ Die KI baut nicht automatisch:
 - Groundline: etwa Y `105`.
 - Ground-Spike: exakt Y `105`.
 - Nicht fuer Ground-Spikes verwenden: Y `120`, Y `150`, Y `200` oder hoeher.
-- Kleine Plattform: nur wenn verlangt, etwa Y `120` bis Y `135`.
+- Block-ID `1` muss 30 Y-Einheiten tiefer platziert werden als die AI oft annimmt.
+- Kleine Blockplattform: nur wenn verlangt, etwa Y `90` bis Y `105`.
+- Nutze fuer niedrige Blockplattformen nicht Y `120`; das ist um 30 zu hoch.
 - Platform-Laenge fuer einfache Spruenge: 2 bis 4 Bloecke.
 - X-Abstand zwischen einfachen Spikes: mindestens etwa `90` bis `150`.
 
@@ -54,7 +56,7 @@ Ground-Spike plus kurze Plattform:
 
 ```text
 LEVELSTRING:
-1,8,2,270,3,105;1,1,2,420,3,120;1,1,2,450,3,120;1,8,2,570,3,105;
+1,8,2,270,3,105;1,1,2,420,3,90;1,1,2,450,3,90;1,8,2,570,3,105;
 ```
 
 ## Schlechte Mini-Patterns
