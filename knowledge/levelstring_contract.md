@@ -8,8 +8,10 @@ Die Mod erwartet einen Geometry-Dash-Levelstring, der direkt in den Editor einge
 
 ```text
 LEVELSTRING:
-1,<OBJECT_ID>,2,<X>,3,<Y>;1,<OBJECT_ID>,2,<X>,3,<Y>;
+1,8,2,270,3,120;1,8,2,420,3,120;
 ```
+
+Das Beispiel zeigt echte Zahlen. Die KI darf keine spitzen Klammern und keine Platzhalter ausgeben.
 
 ## Objekt-Grundstruktur
 
@@ -34,8 +36,8 @@ Bedeutung:
 
 Warum falsch:
 
-- Kein `1,<Objekt-ID>` am Objektanfang
-- keine stabilen `2,<X>` und `3,<Y>` Positionen
+- Kein Key `1` mit echter Objekt-ID am Objektanfang
+- keine stabilen Key-`2`- und Key-`3`-Positionen mit echten Zahlen
 - Farbwoerter wie `Red` sind kein sicherer roher GD-Key-Value-Wert
 
 ## Sicherer Minimal-Level
@@ -50,7 +52,7 @@ LEVELSTRING:
 ## Ground-Regel
 
 - Keine langen Blockboeden als Standard.
-- Keine durchgehende Reihe `1,1,2,<X>,3,105;...`, ausser der Nutzer verlangt explizit Custom-Ground.
+- Keine durchgehende Reihe wie `1,1,2,150,3,105;1,1,2,180,3,105;...`, ausser der Nutzer verlangt explizit Custom-Ground.
 - Der GD-Ground ist bereits vorhanden.
 - Hindernisse gehoeren auf die Spielerlinie, nicht weit darueber.
 

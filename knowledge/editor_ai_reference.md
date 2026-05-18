@@ -37,7 +37,7 @@ LEVELSTRING:
 6,1,10;8,20,-2,4,2,Red
 ```
 
-Warum nicht erlaubt: Jedes Objekt muss mit `1,<Objekt-ID>` beginnen. Positionen muessen ueber Key `2` fuer X und Key `3` fuer Y gesetzt werden.
+Warum nicht erlaubt: Jedes Objekt muss mit Key `1` und einer echten Objekt-ID beginnen, zum Beispiel `1,8`. Positionen muessen ueber Key `2` fuer X und Key `3` fuer Y gesetzt werden.
 
 ## Minimaler GD-Objektstring
 
@@ -45,9 +45,11 @@ Ein Objekt ist eine Komma-Liste aus Key-Value-Paaren. Objekte werden mit Semikol
 
 Pflicht fuer jedes sichtbare Objekt:
 
-- `1,<Objekt-ID>`: Objekt-ID
-- `2,<X>`: X-Position
-- `3,<Y>`: Y-Position
+- Key `1` plus echte Objekt-ID, zum Beispiel `1,8`
+- Key `2` plus echte X-Position, zum Beispiel `2,270`
+- Key `3` plus echte Y-Position, zum Beispiel `3,120`
+
+Nie spitze Klammern oder Platzhalter ausgeben.
 
 Minimal:
 
@@ -143,8 +145,9 @@ Vor der Ausgabe muss gelten:
 - Es gibt `LEVELSTRING:`.
 - Danach kommen keine Erklaerungen mehr.
 - Der String enthaelt mindestens ein Semikolon.
-- Jedes Objekt beginnt mit `1,<Objekt-ID>`.
-- Jedes Objekt hat `2,<X>` und `3,<Y>`.
+- Jedes Objekt beginnt mit Key `1` und einer echten Objekt-ID, zum Beispiel `1,8`.
+- Jedes Objekt hat Key `2` und Key `3` mit echten Zahlen, zum Beispiel `2,270,3,120`.
+- Keine spitzen Klammern und keine Platzhalter.
 - Keine Markdown-Codebloecke.
 - Kein Plan als Ersatz fuer den Levelstring.
 - Kein langer Blockboden, ausser explizit verlangt.

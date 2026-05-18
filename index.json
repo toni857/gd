@@ -11,7 +11,7 @@
     "knowledge/examples.md",
     "knowledge/validation_checklist.md",
     "levels/README.md",
-    "levels/<level-id>.json"
+    "levels/123456.json"
   ],
   "raw_primary_url": "https://raw.githubusercontent.com/toni857/gd/main/knowledge/editor_ai_reference.md"
 }

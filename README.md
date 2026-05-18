@@ -10,7 +10,7 @@ Wichtigster Einstieg:
 - `knowledge/examples.md`
 - `knowledge/design_rules.md`
 - `knowledge/validation_checklist.md`
-- `levels/<level-id>.json`
+- `levels/123456.json`
 
 Die Mod soll diese Daten als harte Vorgabe an die KI mitschicken. Wenn eine Antwort keinen echten `LEVELSTRING:` mit gueltigen GD-Objektstrings enthaelt, gilt sie als Fehler.
 
