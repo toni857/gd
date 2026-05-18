@@ -13,5 +13,8 @@ Vor jeder Antwort pruefen:
 - [ ] Keine Farbwoerter wie `Red`, `Blue`, `Yellow` als rohe Werte.
 - [ ] Keine erfundenen Trigger.
 - [ ] Objektanzahl <= MaxObjects.
+- [ ] Kein langer kuenstlicher Blockboden, ausser explizit verlangt.
+- [ ] Gameplay-Hindernisse liegen auf/knapp ueber der Spielerlinie, nicht weit darueber.
+- [ ] Der erste spielbare Abschnitt startet links nach rechts ab etwa X `180` bis `240`.
 
-Wenn eine dieser Regeln nicht sicher erfuellt ist: einfachen Block/Spike-Levelstring erzeugen.
+Wenn eine dieser Regeln nicht sicher erfuellt ist: einfachen Spike-/Plattform-Levelstring auf dem vorhandenen GD-Ground erzeugen.

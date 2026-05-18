@@ -5,6 +5,7 @@ Diese Repository enthaelt die Regeln und Beispiele, die eine Editor-KI braucht, 
 Wichtigster Einstieg:
 
 - `knowledge/editor_ai_reference.md`
+- `knowledge/groundline_and_player_path.md`
 - `knowledge/levelstring_contract.md`
 - `knowledge/examples.md`
 - `knowledge/design_rules.md`
@@ -12,5 +13,7 @@ Wichtigster Einstieg:
 - `levels/<level-id>.json`
 
 Die Mod soll diese Daten als harte Vorgabe an die KI mitschicken. Wenn eine Antwort keinen echten `LEVELSTRING:` mit gueltigen GD-Objektstrings enthaelt, gilt sie als Fehler.
+
+Wichtig fuer Gameplay: Geometry Dash hat bereits einen eingebauten Boden. Die KI soll keinen langen Blockboden erzeugen, sondern Spikes, Plattformen und Design auf dem vorhandenen Spielerpfad platzieren.
 
 Der Ordner `levels/` ist fuer echte exportierte Suchergebnisse gedacht. Die Geode-Mod legt dort neue Dateien mit der Geometry-Dash-Level-ID als Dateinamen ab, zum Beispiel `levels/123456.json`.

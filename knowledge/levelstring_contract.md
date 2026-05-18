@@ -16,14 +16,14 @@ LEVELSTRING:
 Ein Objekt:
 
 ```text
-1,1,2,150,3,105;
+1,8,2,270,3,120;
 ```
 
 Bedeutung:
 
-- `1,1`: Objekt-ID 1
-- `2,150`: X = 150
-- `3,105`: Y = 105
+- `1,8`: Objekt-ID 8, hier ein Spike
+- `2,270`: X = 270
+- `3,120`: Y = 120
 - `;`: Ende des Objekts
 
 ## Falsch
@@ -40,25 +40,36 @@ Warum falsch:
 
 ## Sicherer Minimal-Level
 
+Der sichere Minimal-Level benutzt den vorhandenen GD-Ground und setzt nur Hindernisse/Plattformen:
+
 ```text
 LEVELSTRING:
-1,1,2,150,3,105;1,1,2,180,3,105;1,1,2,210,3,105;1,1,2,240,3,105;1,8,2,300,3,120;1,1,2,360,3,105;1,1,2,390,3,105;1,1,2,420,3,105;
+1,8,2,270,3,120;1,8,2,420,3,120;1,1,2,540,3,150;1,1,2,570,3,150;1,8,2,720,3,120;
 ```
+
+## Ground-Regel
+
+- Keine langen Blockboeden als Standard.
+- Keine durchgehende Reihe `1,1,2,<X>,3,105;...`, ausser der Nutzer verlangt explizit Custom-Ground.
+- Der GD-Ground ist bereits vorhanden.
+- Hindernisse gehoeren auf die Spielerlinie, nicht weit darueber.
 
 ## Laengenheuristik
 
 Die KI soll fuer kurze Prompts nicht zu viele Objekte erzeugen:
 
-- 5 Sekunden: 20 bis 80 Objekte
-- 15 Sekunden: 80 bis 250 Objekte
-- 30 Sekunden: 200 bis 600 Objekte
+- 5 Sekunden: 5 bis 40 Objekte
+- 15 Sekunden: 40 bis 160 Objekte
+- 30 Sekunden: 120 bis 450 Objekte
 - MaxObjects ist immer hartes Limit
 
 ## Objektabstand
 
-- Bodenbloecke: X in 30er-Schritten
+- Erster sinnvoller Gameplay-X-Wert: etwa `180` bis `240`
+- Ground-Spike: oft Y `120`
 - Spike-Abstand: mindestens 90 bis 150 X-Einheiten fuer einfache Schwierigkeit
-- Plattformhoehen: Y `135`, `165`, `195` fuer einfache Variationen
+- Plattformhoehen: Y `135`, `150`, `165` fuer einfache Variationen
+- Plattformen: 2 bis 4 Blockobjekte, nicht endlos weiterziehen
 
 ## Keine erfundenen Trigger
 

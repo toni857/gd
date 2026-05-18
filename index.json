@@ -5,6 +5,7 @@
   "primary": "knowledge/editor_ai_reference.md",
   "files": [
     "knowledge/editor_ai_reference.md",
+    "knowledge/groundline_and_player_path.md",
     "knowledge/levelstring_contract.md",
     "knowledge/design_rules.md",
     "knowledge/examples.md",

@@ -3,8 +3,10 @@ Geometry Dash Editor AI Knowledge Base
 Start here:
 - README.md
 - knowledge/editor_ai_reference.md
+- knowledge/groundline_and_player_path.md
 - knowledge/levelstring_contract.md
 - knowledge/examples.md
 
 This repository is meant to be read by the Geode Editor AI mod.
 The AI must build Geometry Dash editor object strings, not describe levels.
+Geometry Dash already has default ground; the AI must not create a long block floor unless explicitly requested.
