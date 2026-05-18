@@ -24,8 +24,9 @@ Die KI baut nicht automatisch:
 - Spieler startet links und laeuft nach rechts.
 - Beginne sinnvolle Gameplay-Objekte ab X `180` bis `240`.
 - Groundline: etwa Y `105`.
-- Ground-Spike: oft Y `120`.
-- Kleine Plattform: etwa Y `135`, `150` oder `165`.
+- Ground-Spike: exakt Y `105`.
+- Nicht fuer Ground-Spikes verwenden: Y `120`, Y `150`, Y `200` oder hoeher.
+- Kleine Plattform: nur wenn verlangt, etwa Y `120` bis Y `135`.
 - Platform-Laenge fuer einfache Spruenge: 2 bis 4 Bloecke.
 - X-Abstand zwischen einfachen Spikes: mindestens etwa `90` bis `150`.
 
@@ -39,21 +40,21 @@ Einzelner Ground-Spike:
 
 ```text
 LEVELSTRING:
-1,8,2,270,3,120;
+1,8,2,270,3,105;
 ```
 
 Zwei einfache Spruenge mit Abstand:
 
 ```text
 LEVELSTRING:
-1,8,2,270,3,120;1,8,2,450,3,120;
+1,8,2,270,3,105;1,8,2,450,3,105;
 ```
 
 Ground-Spike plus kurze Plattform:
 
 ```text
 LEVELSTRING:
-1,8,2,270,3,120;1,1,2,420,3,150;1,1,2,450,3,150;1,8,2,570,3,120;
+1,8,2,270,3,105;1,1,2,420,3,120;1,1,2,450,3,120;1,8,2,570,3,105;
 ```
 
 ## Schlechte Mini-Patterns

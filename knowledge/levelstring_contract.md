@@ -8,7 +8,7 @@ Die Mod erwartet einen Geometry-Dash-Levelstring, der direkt in den Editor einge
 
 ```text
 LEVELSTRING:
-1,8,2,270,3,120;1,8,2,420,3,120;
+1,8,2,270,3,105;1,8,2,420,3,105;
 ```
 
 Das Beispiel zeigt echte Zahlen. Die KI darf keine spitzen Klammern und keine Platzhalter ausgeben.
@@ -18,14 +18,14 @@ Das Beispiel zeigt echte Zahlen. Die KI darf keine spitzen Klammern und keine Pl
 Ein Objekt:
 
 ```text
-1,8,2,270,3,120;
+1,8,2,270,3,105;
 ```
 
 Bedeutung:
 
 - `1,8`: Objekt-ID 8, hier ein Spike
 - `2,270`: X = 270
-- `3,120`: Y = 120
+- `3,105`: Y = 105
 - `;`: Ende des Objekts
 
 ## Falsch
@@ -46,7 +46,7 @@ Der sichere Minimal-Level benutzt den vorhandenen GD-Ground und setzt nur Hinder
 
 ```text
 LEVELSTRING:
-1,8,2,270,3,120;1,8,2,420,3,120;1,1,2,540,3,150;1,1,2,570,3,150;1,8,2,720,3,120;
+1,8,2,270,3,105;1,8,2,420,3,105;1,8,2,570,3,105;1,8,2,720,3,105;
 ```
 
 ## Ground-Regel
@@ -68,9 +68,10 @@ Die KI soll fuer kurze Prompts nicht zu viele Objekte erzeugen:
 ## Objektabstand
 
 - Erster sinnvoller Gameplay-X-Wert: etwa `180` bis `240`
-- Ground-Spike: oft Y `120`
+- Ground-Spike: exakt Y `105`
+- Nicht fuer Ground-Spikes verwenden: Y `120`, Y `150`, Y `200` oder hoeher
 - Spike-Abstand: mindestens 90 bis 150 X-Einheiten fuer einfache Schwierigkeit
-- Plattformhoehen: Y `135`, `150`, `165` fuer einfache Variationen
+- Plattformhoehen: Y `120` bis `135`, nur wenn Plattformen wirklich verlangt sind
 - Plattformen: 2 bis 4 Blockobjekte, nicht endlos weiterziehen
 
 ## Keine erfundenen Trigger

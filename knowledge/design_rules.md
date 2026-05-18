@@ -9,7 +9,8 @@ Ein gutes Geometry-Dash-Level ist zuerst lesbar und spielbar. Design unterstuetz
 - Geometry Dash hat bereits eingebauten Ground.
 - Die KI soll den vorhandenen Ground als Laufbahn benutzen.
 - Keine langen Blockboeden bauen, ausser der Nutzer verlangt explizit Custom-Ground.
-- Gameplay muss auf dem Spielerpfad liegen: Groundline etwa Y `105`, Ground-Spikes etwa Y `120`.
+- Gameplay muss auf dem Spielerpfad liegen: Groundline Y `105`, Ground-Spikes exakt Y `105`.
+- Nicht fuer Ground-Spikes verwenden: Y `120`, Y `150`, Y `200` oder hoeher.
 - Objekte weit ueber der Laufbahn sind Deko, kein Hindernis.
 
 ## Lesbarkeit

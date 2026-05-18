@@ -21,7 +21,7 @@ Erlaubt:
 
 ```text
 LEVELSTRING:
-1,8,2,270,3,120;1,8,2,420,3,120;1,1,2,540,3,150;1,1,2,570,3,150;
+1,8,2,270,3,105;1,8,2,420,3,105;1,8,2,570,3,105;1,8,2,720,3,105;
 ```
 
 Nicht erlaubt:
@@ -47,20 +47,20 @@ Pflicht fuer jedes sichtbare Objekt:
 
 - Key `1` plus echte Objekt-ID, zum Beispiel `1,8`
 - Key `2` plus echte X-Position, zum Beispiel `2,270`
-- Key `3` plus echte Y-Position, zum Beispiel `3,120`
+- Key `3` plus echte Y-Position, zum Beispiel `3,105`
 
 Nie spitze Klammern oder Platzhalter ausgeben.
 
 Minimal:
 
 ```text
-1,8,2,270,3,120;
+1,8,2,270,3,105;
 ```
 
 Mehrere Objekte:
 
 ```text
-1,8,2,270,3,120;1,8,2,420,3,120;1,1,2,540,3,150;1,1,2,570,3,150;
+1,8,2,270,3,105;1,8,2,420,3,105;1,8,2,570,3,105;1,8,2,720,3,105;
 ```
 
 ## Sichere Starter-Objekte
@@ -83,9 +83,11 @@ Regeln:
 - Baue keinen langen Blockboden und keine durchgehende Blocklinie.
 - Baue nur dann Custom-Ground, wenn der Nutzer explizit Boden, Plattformboden, Custom-Ground oder eine schwebende Plattform verlangt.
 - Der Cube startet links auf dem vorhandenen Ground.
-- Die normale spielbare Groundline liegt etwa bei Y `105`.
-- Ground-Spikes liegen typischerweise bei Y `120`.
-- Kleine erreichbare Plattformen liegen fuer einfache Cube-Spruenge grob bei Y `135`, `150` oder `165`.
+- Fuer normales Cube-Groundplay ist Y `105` die Gameplay-Linie.
+- Ground-Spikes muessen exakt Y `105` benutzen.
+- Nutze fuer Ground-Spikes nicht Y `120`, Y `150`, Y `200` oder hoeher.
+- Kleine erreichbare Plattformen liegen nur dann bei Y `120` bis Y `135`, wenn der Nutzer Plattformen verlangt.
+- Wenn der Nutzer keine Plattformen verlangt, baue keine hohen Plattformen.
 - Baue ab etwa X `180` bis X `240` nach rechts. Nicht um X `0` stapeln.
 - Hindernisse, die gesprungen werden sollen, muessen auf oder knapp ueber der Spielerlinie liegen.
 - Zu hoch platzierte Spikes oder Bloecke sind kein Gameplay, weil der Spieler darunter durchlaeuft.
@@ -100,7 +102,7 @@ Falsch: eine kuenstliche Bodenlinie als Standard:
 Richtig: vorhandenen Ground nutzen und echte Sprungaufgaben platzieren:
 
 ```text
-1,8,2,270,3,120;1,8,2,420,3,120;1,1,2,540,3,150;1,1,2,570,3,150;1,8,2,690,3,120;
+1,8,2,270,3,105;1,8,2,420,3,105;1,8,2,570,3,105;1,8,2,720,3,105;
 ```
 
 ## Gameplay-Form
@@ -146,7 +148,7 @@ Vor der Ausgabe muss gelten:
 - Danach kommen keine Erklaerungen mehr.
 - Der String enthaelt mindestens ein Semikolon.
 - Jedes Objekt beginnt mit Key `1` und einer echten Objekt-ID, zum Beispiel `1,8`.
-- Jedes Objekt hat Key `2` und Key `3` mit echten Zahlen, zum Beispiel `2,270,3,120`.
+- Jedes Objekt hat Key `2` und Key `3` mit echten Zahlen, zum Beispiel `2,270,3,105`.
 - Keine spitzen Klammern und keine Platzhalter.
 - Keine Markdown-Codebloecke.
 - Kein Plan als Ersatz fuer den Levelstring.
